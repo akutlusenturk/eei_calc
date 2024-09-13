@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp1d
 import os
-from .eei_lib import *
+from eei_lib import *
 
 st.set_page_config(
  page_title='EEI',
