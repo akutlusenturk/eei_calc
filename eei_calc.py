@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 from scipy.interpolate import interp1d
 import os
 import sys
-sys.path.append('.')
+path_root = Path(__file__).parents[2]
+sys.path.append(str(path_root))
 from eei_lib import *
 
 st.set_page_config(
