@@ -4,6 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp1d
 import os
+import sys
+sys.path.append('.')
 from eei_lib import *
 
 st.set_page_config(
