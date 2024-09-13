@@ -4,10 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.interpolate import interp1d
 import os
-import sys
-path_root = Path(__file__).parents[2]
-sys.path.append(str(path_root))
-from eei_lib import *
+from .eei_lib import *
 
 st.set_page_config(
  page_title='EEI',
