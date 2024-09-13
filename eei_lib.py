@@ -22,6 +22,7 @@ def dP (dosya, groupby = "Q", minQ = 0.01, minH = 0.01, minPhyd = 0.01):
     df = pd.read_excel("differential_pressure/"+dosya,index_col=0)
     df = df.rename(columns={"Flow_Rate":"Q","Valve_Aperture":"D","Head":"H","Hydraulic_Power":"Phyd", \
                        "Suction_Pressure":"P1","Discharge_Pressure":"P2","Active_Power":"Pcons"})
+    df = df.drop(columns=["Date","Time"]
     df = df.groupby(groupby,as_index=False).mean()
     df = df[df.Q>=minQ]
     df = df[df.H>=minH]
